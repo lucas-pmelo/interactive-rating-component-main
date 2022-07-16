@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container" id="rating">
+    <button class="icon-star"><img src="./images/icon-star.svg" alt="icon star" ></button>
+    <h1 class="title">How did we do?</h1>
+    <p class="rating-text">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+    <div class="rating-list">
+      <label class="radio"><input type="radio" class="number-list">1</label>
+      <label class="radio"><input type="radio" class="number-list">2</label>
+      <label class="radio"><input type="radio" class="number-list">3</label>
+      <label class="radio"><input type="radio" class="number-list">4</label>
+      <label class="radio"><input type="radio" class="number-list">5</label>
+    </div>
+    <button class="button">Submit</button>
+  </div>
+  <div class="container" id="thanks" hidden>
+    <img src="./images/illustration-thank-you.svg" alt="" class="thanks-icon">
+    <div class="selected">
+      <div class="selected-number"></div>
+    </div>
+    <div class="thanks">
+      <h1 class="thanks-title">Thank you!</h1>
+      <p class="thanks-text">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don't hesitate to get in touch!</p>
+    </div>
+  </div>
+<script src="./js/script.js"></script>
+</body>
+</html>

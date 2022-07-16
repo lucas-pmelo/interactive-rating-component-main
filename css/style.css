@@ -1,0 +1,223 @@
+body {
+    font-family: 'Overpass', sans-serif;
+    background: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+}
+
+.container {
+    margin: 20vh auto;
+    background: linear-gradient(190deg, rgba(37, 45, 55, 1) 0%, rgb(24, 27, 31) 95%);
+    text-align: left;
+    padding: 20px;
+    width: 80vw;
+    border-radius: 10px;
+}
+
+.icon-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 50%;
+    border-style: none;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.rating-text {
+    color:  hsl(217, 12%, 63%);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.rating-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    color: hsl(217, 12%, 63%);
+    border-radius: 50%;
+    border-style: none;
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding-top: 3px;
+    margin: 0;
+}
+
+label:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+label.selecionado {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+
+input {
+    display: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Overpass';
+    letter-spacing: 2px;
+    margin-top: 1.3rem;
+    height: 2.5rem;
+}
+
+.button:hover {
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.selected {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.selected-number {
+    background-color: hsl(213, 19%, 18%);
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: hsl(25, 97%, 53%);
+}
+
+.thanks-icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 22%;
+    margin-right: 21%;
+}
+.thanks {
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 30vw;
+        height: 50vh;
+    }
+    .icon-star {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .title {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .rating-text {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .rating-list {
+        margin-top: 1rem;
+        margin-bottom: 1.3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .button {
+        margin-top: 1.3rem;
+        height: 2.8rem;
+    }
+    .thanks-icon {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(1rem);
+    }
+    .selected {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .thanks-title {
+        font-weight: 700;
+        font-size: 2em;
+    }
+    .thanks-text {
+        color:  hsl(217, 12%, 63%);
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 20vw;
+        height: 40vh;
+    }
+    .icon-star {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .title {
+        margin-left: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .rating-text {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .rating-list {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .button {
+        margin-top: 3rem;
+        height: 2.8rem;
+    }
+    .thanks-icon {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(1rem);
+    }
+    .selected {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .thanks-title {
+        font-weight: 700;
+        font-size: 2em;
+    }
+    .thanks-text {
+        color:  hsl(217, 12%, 63%);
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
